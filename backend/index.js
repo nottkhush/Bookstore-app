@@ -15,7 +15,7 @@ app.use(express.json());
 // Option 2: Allow custom origins
 app.use(
     cors({
-        origin: '',
+        origin: ['https://bookstore-app-frontend-mu.vercel.app/'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type']
     })
